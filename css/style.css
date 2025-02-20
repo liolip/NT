@@ -1,65 +1,222 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+@import url('https://fonts.cdnfonts.com/css/larsseit-font-family');
+body { 
+    background-color: #011627;
+    height: 2000px;
 }
-
-body {
-	font-family: 'Arial', sans-serif;
-	color: white;
-	background: url('background.jpg') no-repeat center center/cover;
-	text-align: center;
-}
-
-.header {
-	display: flex;
-	justify-content: space-between;
-	background: url(../img/bg.jpg) center no-repeat;
-	background-size: cover;
-	height: 100vh;
-	
-	}
-
-.logo {
-	font-size: 40px;
-	font-weight: bold;
-	padding-left: 250px;
-	margin-top: 75px;
-	
-}
-
-.nav-link {
-	background-color:#6F2CFF;
-    background: #6F2CFF;
-    display: block;
+.base_1 {
+    font-family: Larsseit;
+    width: 1680px;
+    height: 1760px;
+    border-radius: 8px;
+    background-color: #011627;
+    justify-self: center;
     text-align: center;
-    color:#fff;
-    transition: 0.5s;
-    border-radius: 20px;
-    padding: 10px 34px;
-    line-height: 1;
-    font-size: 15px;
-}
-.main {
-	padding-bottom: 225px;
-
+    color: white;
 }
 
-.main_tit {
-	font-size: 60px;
-	font-weight: bold;
+.base_1 .header { 
+    width: 545px;
+    height: 79px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    justify-self: center;
 }
-
-.main_subtitle {
-	margin-top: 10px;
-	font-size: 18px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+.base_1 .header h2 { 
+    line-height: 79.2px;
+    font-size: 72px;
+    width: 580px;
+    height: 79px;
+    font-weight: 700;
 }
+.base_1 .header p {
+    width: 570px;
+    height: 33px;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.main { 
+    margin: 0 10% 0 10%;
+}
+.main .box:hover { 
+    animation-name: anim;
+    animation-duration: 1s;
+}
+@keyframes anim { 
+    from {
+        scale: 1;
+    }
+    to { 
+        scale: 1.1;
+    }
+}
+.main .box {
 
-.main_txt {
-	margin-top: 20px;
-	font-size: 16px;
-	max-width: 600px;
-	margin: 20px auto;
+    animation-name: anims;
+    animation-duration: 1s;
+}
+@keyframes anims { 
+    from {
+        scale: 1.1;
+    }
+    to { 
+        scale: 1;
+    }
+}
+.main .box {
+    width: 510px;
+    height: 504px;
+    display: inline-block;
+    background-color: #02223B;
+    position: relative;
+    top: 320px;
+    margin: 20px;
+}
+.main .box span { 
+    width: 32px;
+    height: 25px;
+    color: #41EAD4;
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}
+.main .box .text {
+    width: 334px;
+    height: 249px;
+    position: absolute;
+    left: 102px;
+    top: 65px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 34px;
+    text-indent: 9px;
+}
+.main .box .text .head { 
+    font-weight: 700;
+}
+.main .box .text .texts { 
+    font-weight: 300;
+}
+.main .foot img { 
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    left: 102px;
+    top: 365px;
+}
+.main .foot p { 
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    position: relative;
+    top: 360px;
+    left: 200px;
+}
+.footers {
+    width: 424px;
+    height: 172px;
+    justify-self: center;
+    text-align: center;
+    top: 350px;
+    position: relative;
+
+}
+.footers h2 { 
+    font-size: 72px;
+    line-height: 79px;
+    text-align: center;
+    font-weight: 700;
+    width: 448px;
+}
+.footers p { 
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    width: 350px;
+    position: relative;
+    left: 35px;
+}
+footer {
+    font-family: Playfair Display;
+    color: white;
+    position: relative;
+    top: 300px;
+    width: 100%;
+    height: 527px;
+}
+footer .table {
+    justify-self: center;
+    height: 200px;
+}
+footer .box {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 160px;
+}
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    height: 24px;
+}
+footer a {
+    margin: 20px 0 20px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 19px;
+}
+footer .bottom {
+    justify-self: center;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+footer .nt { 
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 69px;
+}
+.tochka { 
+    color: #41EAD4;
+}
+.vert {
+    position: relative;
+    top: 750px;
+    color: none;
+    border: 0;
+    height: 2px;
+    width: 80px;
+    rotate:90deg;
+    background: linear-gradient(#09F4F4,#00C9E0);
+    border-radius: 13px;
+}
+.gor {
+    position: relative;
+    left: -14px;
+    width: 50px;
+    height: 1px;
+    background-color: #41EAD4;
+    color: none;
+    border: 0;
+}
+.cube {
+    rotate: 45deg;
+    top: -12px;
+    left: 49px;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: none;
+    color: none;
+    border: 1px solid #41EAD4;
 }
