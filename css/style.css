@@ -7,6 +7,7 @@
 html,
 body {
 	height: 100%;
+	background: url(../img/Body.png);
 }
 * {
 	margin: 0;
@@ -199,11 +200,27 @@ form {
 
 /* Блок-1 main */
 .Home_main {
-	position: absolute;
 	background: url(../img/menu.jpg) center no-repeat;
 	background-size: cover;
-	height: 120%;
+	min-height: 100vh;
 	width: 100%;
+	overflow: hidden;
+}
+
+.Home_main::before {
+	content: '';
+	position: absolute;
+	bottom: -39px;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	box-sizing: border-box;
+	background: linear-gradient(
+		180deg,
+		rgba(1, 22, 39, 0) 0%,
+		#011627 76.64%,
+		#011627 100%
+	);
 }
 
 /* Text main */
@@ -212,7 +229,7 @@ form {
 	text-align: center;
 	width: 600px;
 	height: 200px;
-	margin: 200px 310px;
+	margin: 155px 310px 170px;
 }
 .main_tit {
 	font-family: 'Stardom';
@@ -224,16 +241,176 @@ form {
 .main_txt {
 	padding: 20px 0;
 }
+.main_txt_in {
+	font-size: 14px;
+}
 
 /* Ссылки main */
-/* .main_link {
-	background: url(../img/menu_end.png) bottom no-repeat;
-} */
+.main_link {
+	margin: 0 78px;
+}
+.main_link_txt {
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
 .link_line {
-	border-left: 2px solid #09f4f4;
+	width: 2px;
 	height: 80px;
+	background: #09f4f4;
 }
 .link_txt {
 	transform: rotate(270deg);
 	display: inline-block;
+}
+.link_img {
+	padding: 10px 25px;
+}
+
+/* Блок-2 menu */
+.menu {
+	position: relative;
+	background: url(../img/LIGHTS_body.svg) center no-repeat;
+	background-size: cover;
+}
+
+/* Заголовок */
+.menu_info {
+	width: 861px;
+	margin: 0 150px;
+}
+.menu_tit_info {
+	padding-top: 5px;
+	font-family: 'Stardom';
+	font-size: 40px;
+	font-weight: 700;
+}
+.menu_txt_info {
+	width: 450px;
+}
+
+/* Меню информация */
+.main_menu_info {
+	position: relative;
+	width: 900px;
+	margin: 100px 200px;
+}
+
+.main_menu {
+	padding: 10px 0;
+	position: relative;
+}
+
+.main_menu a {
+	color: #ffffff90;
+	text-decoration: none;
+	font-size: 16px;
+	position: relative;
+	transition: color 0.3s ease-in-out;
+}
+
+.main_menu a.active {
+	color: #41ead4;
+}
+
+.main_menu a:hover {
+	color: #41ead4;
+}
+
+.indicator {
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background: #41ead4;
+	transition: all 0.3s ease-in-out;
+	width: 120px;
+	left: 0;
+}
+
+/* card */
+.slide-text {
+	position: relative;
+	margin: 243px 120px;
+}
+.productc-card {
+	height: 607px;
+	width: 486px;
+	margin: 5px 150px;
+	position: absolute;
+}
+.dots {
+	background: url(../img/icons/Dots.svg) center no-repeat;
+	background-size: cover;
+	width: 230px;
+	height: 230px;
+	margin: 436px 95px;
+	position: absolute;
+}
+
+.Adventure_text {
+	width: 485px;
+	height: 300px;
+	margin: 150px 0;
+}
+.Adventure_tit {
+	font-size: 65px;
+	font-family: 'Stardom';
+	padding-bottom: 30px;
+}
+.Chill_txt {
+	font-size: 15px;
+	font-weight: 500;
+	padding: 25px 0;
+}
+.Adventure_txt {
+	font-size: 15px;
+}
+
+.menu_link_img {
+	width: 154px;
+	height: 85px;
+	margin: 100px 1100px 0;
+	padding: 25px;
+}
+.menu_link_txt {
+	margin: 5px 0;
+}
+.menu_img {
+	bottom: 0;
+}
+.indicator_link {
+	width: 154px;
+	height: 25px;
+	right: 0;
+	border-bottom: 2px solid #41ead4;
+	border-right: 2px solid #41ead4;
+}
+/* .Information {
+	background: url(../img/about.png) center no-repeat;
+	background-size: cover;
+} */
+.info_text {
+	width: 321px;
+	height: 371px;
+	font-size: 18px;
+}
+.About_tit {
+	font-size: 43px;
+	font-family: 'Stardom';
+	padding: 20px 0;
+}
+.info_txt {
+	font-weight: 600;
+	padding: 10px 0;
+}
+.info_tit {
+	padding: 10px 0;
+}
+.About_info_img {
+	width: 790px;
+	height: 790px;
+}
+.info_img {
+	width: 395px;
+	height: 395px;
 }
